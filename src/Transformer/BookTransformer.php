@@ -11,8 +11,6 @@ final class BookTransformer extends TransformerAbstract
 {
     public function transform(Book $book)
     {
-        //
-
         return [
             'id' => (int)$book->getId(),
             'title' => $book->getTitle(),

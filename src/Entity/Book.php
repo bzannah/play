@@ -6,12 +6,19 @@ namespace App\Entity;
 
 final class Book
 {
+    /** @var string */
     private $id;
+
+    /** @var string */
     private $title;
+
+    /** @var string */
     private $year;
+
+    /** @var string */
     private $isbn;
 
-    public function __construct($id, $title, $isbn, $year)
+    public function __construct(string $id, string $title, string $isbn, string $year)
     {
         $this->id = $id;
         $this->title = $title;

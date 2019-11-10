@@ -9,7 +9,7 @@ use League\Fractal\TransformerAbstract;
 
 final class BookTransformer extends TransformerAbstract
 {
-    public function transform(Book $book)
+    public function transform(Book $book): array
     {
         return [
             'id' => (int)$book->getId(),

@@ -14,7 +14,7 @@ final class MainController
     /**
      * @Route("/", name="app_homepage")
      */
-    public function homepageAction()
+    public function homepageAction(): void
     {
         $books = Book::all();
 
